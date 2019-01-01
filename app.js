@@ -196,7 +196,8 @@ console.log(people2);
 //Start SPREAD
 const arr1 = [1,2,3,4];
 const arr2 =[...arr1,5,6,7];
-
+arr3 =[...arr1.filter(num=>num !==2)];
+console.log(arr3);
 console.log(arr2);
 
 let person3 = {
@@ -218,4 +219,24 @@ console.log(person4);
 
 
 
+//Start  Distruction
+ let profile ={
 
+name1 : "Arif",
+adddres :{
+street : "Rashid Minhas Road",
+City : "karachi"
+
+},
+hobbies : ['Cricket','Movies']
+ }  //This Could be the part of State component or state object in React js
+//console.log(profile.adddres.street)
+
+const {street,City} = profile.adddres;
+console.log(street,City);
+
+
+
+const {name1,hobbies}= profile;
+console.log(name1,hobbies);
+//END  Distruction
