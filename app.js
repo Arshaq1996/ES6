@@ -240,3 +240,55 @@ console.log(street,City);
 const {name1,hobbies}= profile;
 console.log(name1,hobbies);
 //END  Distruction
+
+
+
+// Class in ES6
+
+class person5{
+
+    constructor(name,age){
+this.name= name;
+this.age = age;
+    }
+
+    greet(){
+
+        return  `heloo my name is ${this.name} and my Age is ${this.age}`
+    }
+
+}
+let obj = new person5('john',44);
+
+console.log(obj.greet());
+
+// obj.name='Ali';
+// obj.age = 28;
+
+// console.log(obj.name);
+
+
+// Class in ES6
+
+
+
+// SubClass
+class Customer extends person5{
+
+    constructor(name,age,blance)
+    {
+
+        super(name,age);
+        this.blance1=blance;
+    }
+info(){
+
+    return `Customer name : ${this.name} and the customer age is ${this.age} and customer blance is $${this.blance1}`;
+}
+
+}
+
+const customer1 = new Customer('Kelvin.',30,'$3000')
+console.log(customer1.info());
+
+// Ens SubClass
