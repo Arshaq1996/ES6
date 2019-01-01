@@ -292,3 +292,20 @@ const customer1 = new Customer('Kelvin.',30,'$3000')
 console.log(customer1.info());
 
 // Ens SubClass
+
+
+
+//  Modules
+
+ // file1.js          //just suppose this is a seprate file
+ 
+
+ export const name = 'Jawwad Mughal';
+export default person5;
+
+ // file2.js          //just suppose this is a seprate file
+ 
+ import {name} from './file1';
+import person5 from './file1';
+ 
+//End Modules
