@@ -177,7 +177,45 @@ id:3,
 name:"Zain"
 
 }];
+let people2 = people.filter((objPerson) =>{
 
-let people2 = people.filter(obj1Person=>obj1Person.id!==2);
+
+    if(objPerson.id!==2)
+    {
+
+
+    }
+});
+
+
 console.log(people2);
 //Fiter In Es6
+
+
+
+//Start SPREAD
+const arr1 = [1,2,3,4];
+const arr2 =[...arr1,5,6,7];
+
+console.log(arr2);
+
+let person3 = {
+
+    name : 'Arshaq',
+    age : 22
+}
+console.log(person3);
+let person4 ={
+
+... person3,
+email    : 'arshaqshakeel3@gmial.com'
+
+}
+console.log(person4);
+
+
+// End SPREAD
+
+
+
+
